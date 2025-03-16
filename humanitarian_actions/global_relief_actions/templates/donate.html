@@ -72,6 +72,11 @@
     </style>
 
     <script>
+        const calmmusic = document.getElementById("calmmusic");
+
+        document.addEventListener("DOMContentLoaded", function(){
+            calmmusic.play
+        });
         function gtag_report_conversion(url) {
             var callback = function() {
                 if (typeof(url) !== 'undefined') {
@@ -124,6 +129,6 @@
         <div data-widget-src='https://secure.givelively.org/donate/myaswan-inc?ref=sd_widget' id="give-lively-widget" class="gl-branded-donation-widget"></div>
 
     </div>
-
+    <audio id="calmmusic" src="https://www.youtube.com/embed/0s6bv4yayOk" preload="auto"></audio>
 </body>
 </html>

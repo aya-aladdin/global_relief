@@ -12,6 +12,9 @@
             margin: 0;
             padding: 20px;
         }
+        #logo{
+            float: left;
+        }
         h1, h2, h3 {
             color: #1e3d58;
             text-align: center;
@@ -146,7 +149,11 @@
     </style>
 </head>
 <body>
-    <h1>Humanitarian Actions</h1>
+
+    <div id="logo">
+        <img src="https://experimental-api.asm.skype.com/v1/objects/0-ea-d11-17f84fc930693cdc9453cf2e6c8318a8/views/imgo" alt="Logo" style="width: 150px; height: 150px;margin: 20px auto;">
+    </div>
+    <div><h1>Humanitarian Actions</h1></div>
     
     <h3>The most important key points of humanitarian action:</h3>
     <ul>
@@ -238,10 +245,13 @@
 
     <h2>Support Humanitarian Action</h2>
     <a href="donate/">Donate Here ₊˚ෆ</a>
-    
-    <audio controls>
-        <source src="Untitled song.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="calmmusic" src="https://www.youtube.com/embed/0s6bv4yayOk" preload="auto"></audio>
+    <script>
+        const calmmusic = document.getElementById("calmmusic");
+
+        document.addEventListener("DOMContentLoaded", function(event){
+        calmmusic.play
+        });
+    </script>
 </body>
 </html>
